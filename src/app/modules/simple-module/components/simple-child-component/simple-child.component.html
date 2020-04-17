@@ -1,0 +1,40 @@
+<div>
+  
+  <div>
+    <h3>{{title}}</h3>
+    <p>CONTENT: {{content}}</p>
+    <p>ASSO_CONTENT: {{assoContent}}</p>
+    <p>{{remark.title}}<p>
+    <p>{{remark.content}}<p>
+  </div>
+
+  <div>
+    <h3>EmbededView</h3>
+    <ng-container #vc></ng-container>
+    <ng-template #tpl>
+      <div>I am span in template</div>
+    </ng-template>
+  </div>
+
+  <div>
+    <h3>ProjectedView</h3>
+    <app-simple-list>
+      <app-simple-list-item [content]="'First'"></app-simple-list-item>
+      <app-simple-list-item [content]="'Second'"></app-simple-list-item>
+    </app-simple-list>
+  </div>
+
+  <div>
+    <h3>ComponentView</h3>
+    <p>
+      <app-simple-grand></app-simple-grand>
+    </p>
+  </div>
+
+  <div>
+    <button (click)="changeContent()">ChangeContent</button>
+    <button (click)="changeRemark()">ChangeRemark</button>
+    <button (click)="doNothing()">DoNothing</button>
+  </div>
+
+</div>

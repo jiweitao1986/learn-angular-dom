@@ -1,0 +1,12 @@
+<h2>{{title}}</h2>
+<p
+  [attr.some-attr]="attrValue"
+  [class.some-class]="classValue"
+  [style.color]="styleValue"
+>{{content}}</p>
+<button id="first-button" [disabled]="firstBtnState ? true : false">First Btn</button>
+<button id="second-button" [disabled]="secondBtnState ? 'disabled' : null">Second Btn</button>
+
+<app-simple-child [content]="childContent" [remark]="childRemark"></app-simple-child>
+<button type="button" (click)="changeChildContent()">ChangeChildContent</button>
+<button type="button" (click)="changeChildRemark()">ChangeChildRemark</button>
