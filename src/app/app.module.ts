@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { SimpleModule } from './modules/simple-module/index';
 
 import { WelcomeComponent } from './welcome.component';
 import { ByeComponent } from './bye.component';
-
 import { AppComponent } from './app.component';
+
+import { FeatureModule } from './modules/feature-module/index';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    SimpleModule
+    FeatureModule
   ],
   providers: [],
   bootstrap: [AppComponent]
