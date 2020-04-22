@@ -37,7 +37,7 @@ export class FeatureContentComponent implements AfterViewInit, AfterContentInit,
   public title: string;
 
   constructor() {
-    this.title = 'Feature - Content';
+    this.title = 'Feature-Content';
   }
 
   ngAfterViewInit() {

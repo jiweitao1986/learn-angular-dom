@@ -58,7 +58,7 @@ export class FeatureEventComponent  {
   public items: any[];
 
   constructor() {
-    this.title = 'Feature - Event';
+    this.title = 'Feature-Event';
   }
 
   clickHandler(event): void {

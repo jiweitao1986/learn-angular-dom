@@ -8,7 +8,7 @@ import {
   selector: 'app-feature-text',
   template: `
     <h2>{{title}}</h2>
-    <p>This page is a {{content}} Demo.</p>
+    <p>This page is a ##{{title}}## title, ##{{content}}## content.</p>
   `,
   providers: [
   ]
@@ -17,8 +17,11 @@ export class FeatureTextComponent implements AfterViewInit, AfterContentInit, On
 
   public title: string;
 
+  public content: string;
+
   constructor() {
-    this.title = 'Feature - Text';
+    this.title = 'Feature-Text';
+    this.content = 'Feature-Text';
   }
 
   ngAfterViewInit() {

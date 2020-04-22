@@ -9,6 +9,7 @@ import {
   template: `
     <h2>{{title}}</h2>
     <p
+      id="my-p"
       [attr.some-attr]="attrValue"
       [class.some-class]="classValue"
       [style.color]="styleValue"
@@ -28,7 +29,7 @@ export class FeatureAttributeComponent implements AfterViewInit, AfterContentIni
   public styleValue = 'red';
 
   constructor() {
-    this.title = 'Feature - Text';
+    this.title = 'Feature-Text';
   }
 
   ngAfterViewInit() {

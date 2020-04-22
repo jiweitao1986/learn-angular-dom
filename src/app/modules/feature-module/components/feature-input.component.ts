@@ -34,7 +34,7 @@ export class FeatureInputComponent implements AfterViewInit, AfterContentInit, O
   public observableContent: Observable<any>;
 
   constructor() {
-    this.title = 'Feature - Input';
+    this.title = 'Feature-Input';
   }
 
   ngAfterViewInit() {

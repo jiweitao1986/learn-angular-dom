@@ -20,7 +20,7 @@ export class FeaturePipeComponent implements AfterViewInit, AfterContentInit, On
   public now: Date;
 
   constructor() {
-    this.title = 'Feature - Pipe';
+    this.title = 'Feature-Pipe';
     this.now = new Date();
   }
 

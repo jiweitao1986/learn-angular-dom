@@ -27,7 +27,7 @@ export class FeatureForComponent  {
   public items: any[];
 
   constructor() {
-    this.title = 'Feature - For';
+    this.title = 'Feature-For';
     this.items = [
       {id: 1, name: 'item-1st'},
       {id: 2, name: 'item-2nd'},

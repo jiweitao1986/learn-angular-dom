@@ -47,7 +47,7 @@ export class FeatureTemplateComponent implements AfterViewInit, AfterContentInit
 
 
   constructor() {
-    this.title = 'Feature - Template';
+    this.title = 'Feature-Template';
   }
 
   ngAfterViewInit() {

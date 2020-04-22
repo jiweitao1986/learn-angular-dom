@@ -22,7 +22,7 @@ export class FeatureIfComponent  {
   public status: string;
 
   constructor() {
-    this.title = 'Feature - If';
+    this.title = 'Feature-If';
     this.status = 'pass';
   }
 }
